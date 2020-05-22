@@ -1,14 +1,323 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minium-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minium-scale=1.0">
     <title>Coffe and Cake</title>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Poppins" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <!-- ENCABEZADO -->
+    <header>
+        <!-- MENU PC -->
+        <div class="menu-var-pc">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <nav class="menu-principal">
+                <a href="#">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Nuestro Chef</a>
+                <a href="#">Menú</a>
+                <a href="#">Contacto</a>
+            </nav>
+            <div class="top-redes">
+                <a href="#">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-youtube-square"></i>
+                </a>
+            </div>
+        </div>
+        <!-- MENU MOVIL -->
+        <div class="menu-var-movil">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <div class="burger-menu" id="burger_menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="slideMenu" id="slideMenu">
+                <div class="top-redes">
+                    <a href="#">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube-square"></i>
+                    </a>
+                </div>
+                <nav class="menu-principal">
+                    <a href="#">Inicio</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Nuestro Chef</a>
+                    <a href="#">Menú</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <!-- MAIN -->
+    <section class="main">
+        <!-- PORTADA -->
+        <section class="portada" id="portada">
+            <!-- COLUMNA IZQUIERDA -->
+            <div class="col">
+                <div class="foto izq lightbox">
+                    <div class="overlay">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="texto">
+                    <h2>Mejor Calidad</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem cumque porro a fugiat
+                        iste, impedit doloremque quos.</p>
+                </div>
+                <div class="foto-full izq lightbox">
+                    <div class="overlay">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- COLUMNA DERECHA -->
+            <div class="col">
+                <div class="foto-full der lightbox">
+                    <div class="overlay">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="foto der lightbox">
+                    <div class="overlay">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="texto">
+                    <h2>Mejor Calidad</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem cumque porro a fugiat
+                        iste, impedit doloremque quos.</p>
+                </div>
+            </div>
+        </section>
+        <!-- NOSOTROS -->
+        <section class="nosotros" id="nosotros">
+            <div class="container">
+                <div class="col izq">
+                    <div class="titulo-seccion">
+                        <p>Nosotros</p>
+                        <h2>Conócenos</h2>
+                    </div>
+                </div>
+                <div class="col der">
+                    <div class="texto">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolor. Consequatur pariatur
+                            eius explicabo consectetur accusamus, similique blanditiis quidem alias nisi voluptate! Vero
+                            rem delectus quae. Deleniti culpa temporibus aperiam?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CHEF -->
+        <section class="chef" id="chef">
+            <div class="container">
+                <div class="col izq">
+                    <div class="slider" id="slider">
+                        <div class="slide foto1"></div>
+                        <div class="slide foto2"></div>
+                        <div class="slide foto3"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="titulo-seccion">
+                        <h2>Nuestro Chef</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quas magnam debitis
+                            iure ut suscipit expedita voluptatum?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MENU -->
+        <section id="nuestro_menu" class="menu-platos">
+            <div class="container">
+                <div class="titulo-seccion">
+                    <h2>Nuestro menú</h2>
+                </div>
+                <div class="contenedor-menu">
+                    <ul id="encabezado_menu" class="encabezado">
+                        <li><a href="#postres">Postres</a></li>
+                        <li><a href="#cafes">Cafés</a></li>
+                    </ul>
+                    <div class="contenido" id="contenido_menu">
+                        <!-- MENU POSTRES -->
+                        <div id="postres">
+                            <div class="item">
+                                <div class="col izq">
+                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, maiores.</p>
+                                </div>
+                                <div class="col der">
+                                    <p class="precio">$15</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col izq">
+                                    <h3>Lorem sit amet.</h3>
+                                    <p>Lorem adipisicing elit. Illo, maiores.</p>
+                                </div>
+                                <div class="col der">
+                                    <p class="precio">$20</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col izq">
+                                    <h3>Lorem ipsum sit amet.</h3>
+                                    <p>Lorem ipsum consectetur, adipisicing elit. Illo, maiores.</p>
+                                </div>
+                                <div class="col der">
+                                    <p class="precio">$17</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col izq">
+                                    <h3>Ipsum dolor sit amet.</h3>
+                                    <p>Adipisicing elit. Illo, maiores.</p>
+                                </div>
+                                <div class="col der">
+                                    <p class="precio">$35</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MENU CAFES -->
+                        <div id="cafes">
+                            <div class="item">
+                                <div class="col izq">
+                                    <h3>Lorem ipsum dolor asfasdfsit amet.</h3>
+                                    <p>Lorem ipsum dolor sit amasfasdfet consectetur, adipisicing elit. Illo, maiores.
+                                    </p>
+                                </div>
+                                <div class="col der">
+                                    <p class="precio">$7</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col izq">
+                                    <h3>Lorem sit asfasdfamet.</h3>
+                                    <p>Lorem adipisicing asfasfdelit. Illo, maiores.</p>
+                                </div>
+                                <div class="col der">
+                                    <p class="precio">$21</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col izq">
+                                    <h3>Lorem ipsum sit asfasdfamet.</h3>
+                                    <p>Lorem ipsum consectetasdfasdfur, adipisicing elit. Illo, maiores.</p>
+                                </div>
+                                <div class="col der">
+                                    <p class="precio">$27</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col izq">
+                                    <h3>Ipsum dolor sit aasdfasfdmet.</h3>
+                                    <p>Adipisicing elit. Ilasfasdfasdfasdflo, maiores.</p>
+                                </div>
+                                <div class="col der">
+                                    <p class="precio">$12</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACTO -->
+        <section class="contacto" id="contacto">
+            <div class="datos parallax">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="blurb">
+                        <h3>Escribenos</h3>
+                        <p>correo@correo.com</p>
+                    </div>
+                    <div class="blurb">
+                        <h3>Visitanos</h3>
+                        <p>Calle "A" 27-37 <br> Ciudad GT</p>
+                    </div>
+                    <div class="blurb">
+                        <h3>Horario</h3>
+                        <p>Lunes-Viernes<br> 9:00am - 6:00pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="formulario">
+                <form action="" class="formulario_contacto" name="formulario_contacto">
+                    <div class="input-group">
+                        <input type="text" id="nombre" name="nombre">
+                        <label for="nombre" class="label">Nombre</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="email" name="email">
+                        <label for="email" class="label">Correo electrónico</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="mensaje" id="mensaje"></textarea>
+                        <label for="mensaje" class="label">Mensaje</label>
+                    </div>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+
+    </section>
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <p class="copyright">&copy; Todos los derechos reservados</p>
+        <div class="bottom-redes">
+            <a href="#">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-youtube-square"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script src="js/lightbox.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/formulario.js"></script>
+    <script src="js/bgParallax.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/menuMovil.js"></script>
 </body>
+
 </html>
