@@ -149,7 +149,6 @@ header {
             max-width: 3.125rem;
         }
 
-
         .burger-menu {
             cursor: pointer;
             font-size: 2.1875rem;
@@ -184,7 +183,7 @@ header {
             .menu-principal {
 
                 a {
-                    display: block;
+                    display: block !important;
                     padding: 0.625rem 0;
                     border-top: 1px solid @gris-claro;
                 }
@@ -533,7 +532,7 @@ header {
             position: relative;
             background-image: url('../img/contacto-bg.jpg');
             background-size: cover;
-            background-position: center;
+            background-repeat: no-repeat;
 
             .overlay {
                 position: absolute;
@@ -757,7 +756,7 @@ footer {
 @media all and(max-width: 800px) {
     header{
 
-        .menu-principal{
+        .menu-var-pc{
             display: none;
         }
 
